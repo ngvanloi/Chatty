@@ -5,7 +5,6 @@ import User from "../models/user.model.js"
 import bcrypt from "bcryptjs"
 
 export const signup = async (req, res) => {
-    console.log(req.body)
     const { fullName, email, password, profilePic } = req.body;
     try {
         if (!fullName || !email || !password) {
